@@ -68,7 +68,7 @@
     var towDots2 = document.querySelectorAll(".twoDots span")[1];
     if(towDots.style.opacity=="0.5" ) 
     {towDots.style.opacity="1"; towDots2.style.opacity="1"} 
-    else {towDots.style.opacity="0.5"; towDots2.style.opacity="0.5" ;getPrayersTimes();}
+    else {towDots.style.opacity="0.5"; towDots2.style.opacity="0.5" ;}
                         }, 1000);
     
     
@@ -102,7 +102,7 @@
                 }
             };
             
-            var url = "http://api.aladhan.com/v1/timingsByCity/"+fullYear+"?city=Algiers&country=Algeria&method=1";
+            var url = "https://api.aladhan.com/v1/timingsByCity/"+fullYear+"?city=Algiers&country=Algeria&method=1";
             xhr.open("get", url, true);
             xhr.send();
             
